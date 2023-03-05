@@ -1,4 +1,4 @@
-package Hw3Coordinates;
+package hw3Coordinates;
 
 public class Coordinates {
     public static void main(String[] args) {

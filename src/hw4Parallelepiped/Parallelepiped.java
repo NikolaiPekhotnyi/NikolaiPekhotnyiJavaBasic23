@@ -1,4 +1,4 @@
-package Hw4Parallelepiped;
+package hw4Parallelepiped;
 
 public class Parallelepiped {
     public static void main(String[] args) {
