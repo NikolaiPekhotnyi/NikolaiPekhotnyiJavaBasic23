@@ -18,13 +18,13 @@ public class TranspositionMatrix {
         int[][] initialMatrix = new int[rowMatrix][columnsMatrix];
         int[][] transportedMatrix = new int[columnsMatrix][rowMatrix];
 
-        for (int i = 0; i < rowMatrix - 1; i++) {
+        for (int i = 0; i < rowMatrix; i++) {
             for (int j = 0; j < columnsMatrix; j++) {
-                initialMatrix[i][j] = random.nextInt();
+                initialMatrix[i][j] = random.nextInt(10);
             }
         }
 
-        for (int i = 0; i < rowMatrix - 1; i++) {
+        for (int i = 0; i < rowMatrix; i++) {
             for (int j = 0; j < columnsMatrix; j++) {
                 transportedMatrix[j][i] = initialMatrix[i][j];
             }
@@ -33,7 +33,7 @@ public class TranspositionMatrix {
         System.out.println("Матриця початкова: ");
         for (int i = 0; i < rowMatrix; i++) {
             for (int j = 0; j < columnsMatrix; j++) {
-                System.out.print(initialMatrix[i][j]);
+                System.out.print(initialMatrix[i][j] + " ");
             }
             System.out.println();
         }
@@ -41,7 +41,7 @@ public class TranspositionMatrix {
         System.out.println("Транспортована матриця: ");
         for (int i = 0; i < columnsMatrix; i++) {
             for (int j = 0; j < rowMatrix; j++) {
-                System.out.print(transportedMatrix[i][j]);
+                System.out.print(transportedMatrix[i][j] + " ");
             }
             System.out.println();
         }
